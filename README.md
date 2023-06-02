@@ -5,6 +5,7 @@ Cardiovascular Risk Prediction
 Overview
 This project aims to develop a predictive model for cardiovascular disease (CVD) risk based on demographic and lifestyle factors. The ultimate goal is to provide a personalized risk score for each individual, which will enable healthcare providers to take necessary preventive measures and improve disease outcomes.
 
+
 Data
 Demographic:
 * Sex: male or female("M" or "F")
