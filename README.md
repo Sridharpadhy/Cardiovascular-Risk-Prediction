@@ -1,6 +1,8 @@
 # Cardiovascular-Risk-Prediction
 Cardiovascular Risk Prediction
-25579619_cardology_online_2
+
+![image](https://github.com/Sridharpadhy/Cardiovascular-Risk-Prediction/assets/120051156/9b376225-ef69-4c20-9954-d6a309af66d8)
+
 
 Overview
 This project aims to develop a predictive model for cardiovascular disease (CVD) risk based on demographic and lifestyle factors. The ultimate goal is to provide a personalized risk score for each individual, which will enable healthcare providers to take necessary preventive measures and improve disease outcomes.
