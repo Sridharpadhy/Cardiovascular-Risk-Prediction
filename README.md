@@ -6,6 +6,12 @@ Cardiovascular Risk Prediction
 
 Explainatory Video : https://drive.google.com/drive/folders/1JClKXiEyCLBS5BkVej_e2OkQy55OvwnW?usp=sharing 
 
+1. PowerBi dashboard - This File contains the pdf and the powerBI file of the dashboard prepared from the provided data after doing EDA.
+2. Collab file - This is the whole project file from EDA , data cleaning , data preprocessing , Model implementation and hyperameter with detail conculsion
+3. CSV File - This csv File contain the raw data provided to us.
+
+
+
 Overview
 This project aims to develop a predictive model for cardiovascular disease (CVD) risk based on demographic and lifestyle factors. The ultimate goal is to provide a personalized risk score for each individual, which will enable healthcare providers to take necessary preventive measures and improve disease outcomes.
 
