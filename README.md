@@ -37,36 +37,57 @@ Medical( current):
 * Glucose: glucose level (Continuous)
 Predict variable (desired target):
 * 10-year risk of coronary heart disease CHD(binary: “1”, means “Yes”, “0” means “No”)
-Models
+
+
+
 The following machine learning models were built and evaluated in this project:
 
 * Logistic Regression
 * Naive Bayes 
 * Decision Tree
 * Random forest 
-* Adaboost
+* XGboost
 * KNN
 * SVM
-Results
-The end result of this project will be a predictive model that healthcare providers can use to prioritize their interventions and improve the outcomes for individuals at high risk of CVD. The model has the potential to significantly impact public health by reducing the incidence of CVD and improving the lives of those affected by the disease.
 
-Implementation
-The model will be developed using appropriate machine learning techniques and tools, and its performance will be evaluated using confusion matrix. The solution will be easily interpretable, scalable, and capable of handling missing data.
+  
+Results:
 
-Evaluation
-The performance of each model was evaluated using these metrics which provide a comprehensive view of the model's performance:
+Our data set has 17 features & 3390 rows. We studied all these features and have drawn following conclusions:
 
-* Accuracy
-* Precison 
-* Recall
-* F1 Score
-Conclusion
-Based on the analysis of the data, the following conclusions were be drawn:
+The very first graphs gives us the distribution of dependent variable and whch shows that very less no of peoples are prone to cardiovascular risk.
 
-* The comparison of the performance of two models, Logistic Regression and Adaboost, was performed before and after hyperparameter tuning.
-* Logistic Regression model showed the best performance overall, both before and after tuning the hyperparameters.
-* Adaboost model showed significant improvement in performance after hyperparameter tuning, but it still didn't outperform the Logistic Regression model in all metrics used for comparison.
-* Hence, the Logistic Regression model is selected as the best model for predicting heart risk.
-In conclusion, the Logistic Regression model was determined to be the most accurate and efficient model for predicting heart risk. Its performance was consistent and stable, both before and after tuning the hyperparameters. This model can serve as a reliable tool for healthcare professionals to use in their assessments of a patient's heart risk.
+Any value outiside the given normal range determines higher risk of cardiovascular risk. Thus, various companies like insurance, healthcare, fitness-nutrition and medical can target this population for better revenue generation.
+-We have observed that people wether or not smoking are at equal risk of cardio vascular diseases, which suggests companies to target them equally.
+
+-Our data shows that people having hypertension are more prone to cardio vascular diseases, very less no. of paitents are on BpMeds, but 50 % of then are at cardiovascular risk, which is significant. Thus, this information can be leveraged by various companies.
+
+-Distribution of cardiovascular Risk and Age shows that with increase in age chances of having cardiovascular diseases increases.
+
+-Diabetic patients are high risk of getting cardio vascular disease as our data shows; ~ 61% of the diabetic population is at high risk.
+
+-Gender distribution shows that males are more prone to cardio vascular risk as compared to females because the frequency of males having smoking habits is more.
+
+-Another bivariate plot between Systolic and diastolic BP shows that they are positivly correalted and with increase in any of this values increses the ridk of cardiovascular diseases.
+
+-Orderwise correlation shows that age and systolic pressure highly affect our dependent variable.
+
+Machine Learning :
+
+Following Machine Learning models are used in this project with their corresponding performance metrics on the test data -
 
 
+![final final](https://github.com/Sridharpadhy/Cardiovascular-Risk-Prediction/assets/120051156/74e9e97a-35c1-4891-acd2-c014d76a8179)
+
+
+From all this ML Models - Xgboost with hyperparameter is been selected as the Prediction Model because it is giving the result with high accuracy of 0.84 and rou-auc value of 0.84 and precision of 0.86 which is great and also it doesnt seems like overfitting .
+
+Orther then that shap is used to justify the importance xgboost is giving to the features.
+
+The above plot shows the feature importances of the dataset.
+
+Gender is the most influencing factor in prediction.
+
+age, cigsPerDay, pulsePressure,totChol & heartRate also shows good contribution in prediction.
+
+Other features are having less contribution in prediction. Least being BPMeds,diabetes & prevalentStroke.
